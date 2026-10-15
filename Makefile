@@ -17,7 +17,7 @@ OBJS = \
   $K/trampoline.o \
   $K/trap.o \
   $K/syscall.o \
-  $K/sysproc.o \
+   $K/sysproc.o \
   $K/bio.o \
   $K/fs.o \
   $K/log.o \
@@ -130,6 +130,12 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 .PRECIOUS: %.o
 
 UPROGS=\
+	$U/_sysinfotest\
+	$U/_sleep\
+	$U/_find\
+	$U/_xargs\
+	$U/_trace\
+	$U/_ps\
 	$U/_cat\
 	$U/_echo\
 	$U/_forktest\
