@@ -79,7 +79,7 @@ main(int argc, char *argv[])
     usage();
 
   if (limit > MAXARG - base)
-    usage();
+    limit = MAXARG - base;
 
   for (int i = 0; i < base; i++)
     args[i] = argv[start + i];
